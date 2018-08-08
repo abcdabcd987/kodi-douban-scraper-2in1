@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<scraper name="" thumb="" date="2016-03-19">
+    <CreateSearchUrl dest="3">
+        <RegExp dest="3" output="&lt;url&gt;http://127.0.0.1:21958/GetSearchResults/\1&lt;/url&gt;" input="$$1">
+            <expression noclean="1"></expression>
+        </RegExp>
+    </CreateSearchUrl>
+    <GetSearchResults dest="8">
+        <RegExp dest="8" output="\1" input="$$1">
+            <expression noclean="1"></expression>
+        </RegExp>
+    </GetSearchResults>
+    <GetDetails dest="3">
+        <RegExp dest="3" output="\1" input="$$1">
+            <expression noclean="1"></expression>
+        </RegExp>
+    </GetDetails>
+</scraper>
